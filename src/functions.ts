@@ -927,3 +927,14 @@ export const openPlatformPaySetup = async (): Promise<void> => {
     await NativeStripeSdk.openApplePaySetup();
   }
 };
+
+/**
+ * Creating a payment method from a custom form.
+ * This includes the token creation and payment method creation performed natively by stripe.
+ * @param params
+ */
+export const createPaymentMethodFromCustomCardForm = async (
+  params: PaymentMethod.CustomCardFormParams
+): Promise<CreatePaymentMethodResult> => {
+  return await NativeStripeSdk.createPaymentMethodFromCustomCardForm(params);
+};

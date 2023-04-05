@@ -129,7 +129,10 @@ export default function CustomCardFormScreen() {
           </Text>
         )}
         {paymentMethodId && (
-          <Text>Payment method successfully created : {paymentMethodId}</Text>
+          <>
+            <Text>Payment method successfully created:</Text>
+            <Text>{paymentMethodId}</Text>
+          </>
         )}
       </View>
     </View>

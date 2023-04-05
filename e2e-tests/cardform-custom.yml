@@ -1,0 +1,13 @@
+appId: "com.example.reactnativestripesdk"
+---
+- launchApp
+- tapOn: "Accept a payment"
+- tapOn: "Custom UI - Card form"
+- tapOn: "4242 4242 4242 4242"
+- inputText: "4242424242424242"
+- tapOn: "CVC"
+- inputText: "123"
+- tapOn: "MM/YY"
+- inputText: "04/25"
+- tapOn: "Add card"
+- assertVisible: "Payment method successfully created:"

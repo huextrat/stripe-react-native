@@ -5,4 +5,5 @@ export const colors = {
   light_gray: '#F6F9FC',
   dark_gray: '#425466',
   slate: '#0A2540',
+  red: '#FF3B30',
 };

@@ -73,6 +73,18 @@ export type CardParams =
       };
     };
 
+export type CustomCardFormParams = {
+  paymentMethodType: 'Card';
+  billingDetails?: BillingDetails;
+  card: {
+    number: string;
+    cvc: string;
+    expMonth: number;
+    expYear: number;
+    name: string;
+  };
+};
+
 export interface IdealParams {
   paymentMethodType: 'Ideal';
   paymentMethodData?: {

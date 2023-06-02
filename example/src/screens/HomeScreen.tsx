@@ -91,6 +91,14 @@ export default function HomeScreen() {
               }}
             />
           </View>
+          <View style={styles.buttonContainer}>
+            <Button
+              title="Custom UI - Card form"
+              onPress={() => {
+                navigation.navigate('CustomCardFormScreen');
+              }}
+            />
+          </View>
         </>
       </Collapse>
 
